@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(28, 28, 32);
+    color: white;
+}
+
+header {
+    display: flex;
+    height: calc(100vh - 75px) ;
+    align-items: center;
+}
+
+header .header-container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 75px;
+}
+
+.header-container h1 {
+    font-size: 55px;
+}
+
+.header-container p {
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.header-container button {
+    padding: 15px 35px;
+    margin-top: 55px;
+    border: 0;
+    border-radius: 20px;
+    background: blueviolet;
+    font-weight: bolder;
+    color: white;
+}
+
+img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    background: rgb(28, 28, 32);
+    padding: 0 75px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-size: 24px;
+}
+
+nav ul a svg {
+    display: none;
+}
+
+section {
+    height: 1500px;
+    background: white;
+}
+
+@media (max-width: 1000px) {
+    header .header-container{
+        width: 100%;
+    }
+
+    nav ul a {
+        font-size: 20px;
+    }
+}
+
+/* tablet responsivity */
+@media (max-width: 767px) {
+    nav img {
+        display: none;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+}
+
+/* phone responsivity */
+@media (max-width: 470px) {
+    header .header-container {
+        padding: 0 30px;
+    }
+
+    header .header-container h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    nav ul a {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav ul a svg {
+        display: block;
+    }
+
+}
