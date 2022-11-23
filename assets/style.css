@@ -91,30 +91,31 @@ nav ul a svg {
 .img-container {
     width: 50%;
     text-align: center;
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
 .img-container img {
-    width: 300px;
-    height: 300px;    
+    width: 70%;
+    height: 100%;
+    display: inline;
 }
 
 .img-container .line-red {
-    width: 322px;
-    height: 322px;
-    border: 1px solid rgb(255, 70, 70);
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid purple;
     position: absolute;
-    top: calc(300px - 311px);
+    top: -25px;
+    right: calc(50% - 70%/2 - 25px);
 }
 
 .img-container .line-green {
-    width: 322px;
-    height: 322px;
-    border: 1px solid lightskyblue;
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid lightgreen;
     position: absolute;
-    top: calc(300px - 311px);
+    top: -25px;
+    right: calc(50% - 70%/2 - 25px);
     transform: rotate(-3.3deg);
 }
 
@@ -144,7 +145,7 @@ nav ul a svg {
         padding: 100px;
         align-items: center;
         flex-direction: column;
-        gap: 40px;
+        gap: 60px;      
     }
 
     .about-me .content-about-me {
@@ -183,4 +184,21 @@ nav ul a svg {
         display: block;
     }
 
+    .about-me {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        gap: 60px;      
+    }
+    
+    .about-me .content-about-me {
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
 }
