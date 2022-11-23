@@ -58,6 +58,7 @@ nav {
     top: 0;
     background: rgb(28, 28, 32);
     padding: 0 75px;
+    z-index: 9999;
 }
 
 nav ul {
@@ -118,6 +119,63 @@ nav ul a svg {
     right: calc(50% - 70%/2 - 25px);
     transform: rotate(-3.3deg);
 }
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 100px;
+    gap: 35px;
+}
+
+.service-container h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.service-container .box-container  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-container .box-container .service-content {
+    Width: 357px;
+    Height: 394px;
+    padding: 35px;
+    border: 1px solid purple;
+    border-radius: 20px;
+    background: rgb(44, 44, 48);
+}
+
+.service-container .box-container .service-content img {
+    width: 91px;
+    height: 90px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 45px auto;
+}
+
+.service-container .box-container .service-content h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.service-container .box-container .service-content p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1000px) {
     header .header-container{
