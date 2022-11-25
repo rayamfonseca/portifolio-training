@@ -120,60 +120,42 @@ nav ul a svg {
     transform: rotate(-3.3deg);
 }
 
-.service-container {
+.services {
+    text-align: center;
+    margin: 150px auto;
+    padding: 0 75px;
+}
+
+.services .services-container {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .services-container .service-card {
+    border: 1px solid purple;
+    max-width: 360px;
+    border-radius: 16px;
+    padding: 40px 25px;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
-    padding: 55px 100px;
-    gap: 35px;
-}
-
-.service-container h2 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
-}
-
-.service-container .box-container  {
-    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.service-container .box-container .service-content {
-    Width: 357px;
-    Height: 394px;
-    padding: 35px;
-    border: 1px solid purple;
-    border-radius: 20px;
-    background: rgb(44, 44, 48);
-}
-
-.service-container .box-container .service-content img {
-    width: 91px;
+.services .services-container .service-card img {
+    margin-bottom: 40px;
     height: 90px;
-    text-align: center;
-    display: block;
-    margin: 20px auto 45px auto;
+    width: 90px;
 }
 
-.service-container .box-container .service-content h3 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 24px;
+.service-card +.service-card {
+    margin-left: 10px;
 }
-
-.service-container .box-container .service-content p {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-
-
-
-
-
-
 
 
 
@@ -184,6 +166,17 @@ nav ul a svg {
 
     nav ul a {
         font-size: 20px;
+    }
+
+    .services .services-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card +.service-card {
+        margin-left: 0px;
+        margin-top: 20px;
     }
 }
 
@@ -258,5 +251,13 @@ nav ul a svg {
         width: 100%;
         text-align: center;
         position: relative;
+    }
+
+    .services {  
+        padding: 0;
+    }
+
+    .services .services-container {
+        margin: 0 20px;
     }
 }
